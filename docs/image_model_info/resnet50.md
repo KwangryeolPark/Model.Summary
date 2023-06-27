@@ -14,7 +14,7 @@
 |  --- | --- | --- |
 | 0.21 | 55.47 | 44.32 | 
 
-<img src="/home/kwangryeol/python/Model.Summary/docs/figs/resnet50_pie_chart.png" alt="pie_chart" width="500"/>
+<img src="../resnet50_pie_chart.png" alt="pie_chart" width="500"/>
 
 **Layer information**
 

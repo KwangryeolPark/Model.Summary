@@ -139,7 +139,7 @@ def generate_params_pie_chart_by_form(model, model_name=None):
     os.makedirs(DOC, exist_ok=True)
     fig.savefig(PATH)
 
-    content = f'<img src="../../{model_name}_pie_chart.png" alt="pie_chart" width="500"/>'
+    content = f'<img src="../figs/{model_name}_pie_chart.png" alt="pie_chart" width="500"/>'
     return content
     
 def _convert_digit(num):

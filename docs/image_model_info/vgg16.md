@@ -9,6 +9,7 @@
 | Vector | Matrix | Tensor rank 4 | 
 |  --- | --- | --- |
 | 50.00 | 9.38 | 40.62 | 
+
 **Proportional of parameters by form** (%)
 
 

@@ -125,6 +125,7 @@ def generate_layer_table(model):
 def generate_params_pie_chart_by_form(model, model_name=None):
     form = get_num_parameters_by_form(model)
     labels = list(form.keys())
+    labels = [label.split('.')[1] for label in labels]
     sizes = list(form.values())
     fig, ax = plt.subplots()
     ax.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
@@ -138,7 +139,7 @@ def generate_params_pie_chart_by_form(model, model_name=None):
     os.makedirs(DOC, exist_ok=True)
     fig.savefig(PATH)
 
-    content = f'<img src="PATH" alt="pie_chart" width="500"/>'
+    content = f'<img src="{PATH}" alt="pie_chart" width="500"/>'
     return content
     
 def _convert_digit(num):

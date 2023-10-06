@@ -1,9 +1,11 @@
 import os
-from transformers import T5ForConditionalGeneration, T5Tokenizer
+import argparse
+from transformers import GPT2ForSequenceClassification, GPT2Config
 from utils import *
 
-model_name = 't5-11b'
-model = T5ForConditionalGeneration.from_pretrained(model_name)
+model_name = 'gpt2_for_sequence_classification'
+config = GPT2Config()
+model = GPT2ForSequenceClassification._from_config(config)
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 DOC = os.path.join(DIR, 'docs', 'image_model_info', f'{model_name}.md')

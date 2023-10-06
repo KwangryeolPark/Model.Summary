@@ -1,0 +1,9 @@
+{
+    "top_param_models": {
+        "bert-base-cased": 108311810,
+        "bert-base-uncased": 109483778,
+        "bert-large-uncased": 335143938,
+        "gpt2_for_sequence_classification": 124441344,
+        "xlnet-base-cased": 117310466
+    }
+}

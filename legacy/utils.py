@@ -1,45 +1,21 @@
+import matplotlib.pyplot as plt
 import os
-from convert import Converter
-
-converter = Converter()
-
-def check_path(path_dict):
-    for path in path_dict.keys():
-        if 'path' in path:
-            os.makedirs(path_dict[path], exist_ok=True)
-
-def convert_num_to_str(num):
-    if num < 1000:
-        return str(num)
-    elif num < 1000**2:
-        return f'{num/1000:.2f}K'
-    elif num < 1000**3:
-        return f'{num/1000**2:.2f}M'
-    elif num < 1000**4:
-        return f'{num/1000**3:.2f}G'
-    return f'{num/1000**4:.2f}T'
-
 
 def get_num_layers(model):
     num_layers = 0
     for _, _ in model.named_parameters():
         num_layers += 1
     return num_layers
+    
 
 def get_num_parameters(model, type:str='str'):
     num_param = 0
     for _, param in model.named_parameters():
         num_param += param.numel()
     
-    return converter.num2str(num_param, type)
-
-def get_num_trainable_parameters(model, type:str='str'):
-    num_param = 0
-    for _, param in model.named_parameters():
-        if param.requires_grad:
-            num_param += param.numel()
-    
-    return converter.num2str(num_param, type)
+    if type == 'str':
+        return _convert_digit(num_param)
+    return num_param
 
 def get_num_layers_by_form(model):
     form = {
@@ -109,7 +85,6 @@ def generate_prop_form_table(model):
     
     return table
 
-
 def generate_prop_param_table(model):
     forms = get_num_parameters_by_form(model)
     num_params = get_num_parameters(model, 'int')
@@ -146,3 +121,34 @@ def generate_layer_table(model):
         
     
     return contents
+
+def generate_params_pie_chart_by_form(model, model_name=None):
+    form = get_num_parameters_by_form(model)
+    labels = list(form.keys())
+    labels = [label.split('.')[1] for label in labels]
+    sizes = list(form.values())
+    fig, ax = plt.subplots()
+    ax.pie(sizes, labels=labels, autopct='%1.1f%%', shadow=True, startangle=90)
+    
+    assert model_name is not None, 'Please provide model_name'
+    
+    DIR = os.path.dirname(os.path.abspath(__file__))
+    DOC = os.path.join(DIR, 'docs', 'figs')
+    PATH = os.path.join(DOC, f'{model_name}_pie_chart.png')
+    
+    os.makedirs(DOC, exist_ok=True)
+    fig.savefig(PATH)
+
+    content = f'<img src="../figs/{model_name}_pie_chart.png" alt="pie_chart" width="500"/>'
+    return content
+    
+def _convert_digit(num):
+    if num < 1000:
+        return str(num)
+    elif num < 1000**2:
+        return f'{num/1000:.2f}K'
+    elif num < 1000**3:
+        return f'{num/1000**2:.2f}M'
+    elif num < 1000**4:
+        return f'{num/1000**3:.2f}G'
+    return f'{num/1000**4:.2f}T'

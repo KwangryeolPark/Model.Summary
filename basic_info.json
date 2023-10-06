@@ -1,0 +1,7 @@
+{
+    "docs_path": "./docs",
+    "image_path": "./docs/images",
+    "json_name": "data.json",
+    "json_path": "./docs/json",
+    "rank_name": "README.md"
+}

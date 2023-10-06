@@ -6,7 +6,7 @@ from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 'roberta-large-mnli'
+model_name = 'roberta-large'
 
 model = RobertaForSequenceClassification.from_pretrained(model_name)
 model._require_grad = True

@@ -8,3 +8,4 @@
 | 4 | <a href="microsoft-resnet-34.md">microsoft-resnet-34</a> | 81.195 MiB |
 | 5 | <a href="microsoft-resnet-26.md">microsoft-resnet-26</a> | 53.200 MiB |
 | 6 | <a href="microsoft-resnet-18.md">microsoft-resnet-18</a> | 42.635 MiB |
+| 7 | <a href="mobilenet_v1.md">mobilenet_v1</a> | 12.241 MiB |

@@ -5,6 +5,7 @@
         "microsoft-resnet-18": 11176512,
         "microsoft-resnet-26": 13946176,
         "microsoft-resnet-34": 21284672,
-        "microsoft-resnet-50": 23508032
+        "microsoft-resnet-50": 23508032,
+        "mobilenet_v1": 3209026
     }
 }

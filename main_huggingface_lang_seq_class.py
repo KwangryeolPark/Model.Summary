@@ -1,14 +1,14 @@
 import os
 import json
-from transformers import RobertaForSequenceClassification, BertConfig
+from transformers import AlbertForSequenceClassification, BertConfig
 from utils import *
 from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 'roberta-large'
+model_name = 'albert_base_v1'
 
-model = RobertaForSequenceClassification.from_pretrained(model_name)
+model = AlbertForSequenceClassification.from_pretrained(model_name)
 model._require_grad = True
 
 with open('./basic_info.json', 'r') as f:

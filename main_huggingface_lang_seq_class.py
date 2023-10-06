@@ -1,14 +1,14 @@
 import os
 import json
-from transformers import T5ForSequenceClassification, BertConfig
+from transformers import RobertaForSequenceClassification, BertConfig
 from utils import *
 from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 't5-11b'
+model_name = 'roberta-base'
 
-model = T5ForSequenceClassification.from_pretrained(model_name)
+model = RobertaForSequenceClassification.from_pretrained(model_name)
 model._require_grad = True
 
 with open('./basic_info.json', 'r') as f:
@@ -89,3 +89,5 @@ with open(os.path.join(DOC_PATH, f'{model_name}.md'), 'w') as f:
     for content in contents:
         f.write(content)
         f.write('\n')
+
+os.system("git add . && git commit -m 'update' && git push origin master")

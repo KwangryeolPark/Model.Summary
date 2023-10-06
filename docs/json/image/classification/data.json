@@ -1,5 +1,6 @@
 {
     "top_param_models": {
+        "efficientnet_b0": 5288548,
         "efficientnet_b1": 7794184,
         "efficientnet_b2": 9109994,
         "efficientnet_b3": 12233232,

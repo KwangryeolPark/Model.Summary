@@ -79,7 +79,7 @@ current_model_rank = list(rank_json.keys()).index(model_name) + 1
 
 contents = ['# %s parameter information\n' % (model_name)]
 contents.append('**Number of layers: [ %d ]**\n' % (num_layers))
-contents.append('**Number of parameters: [ %s ] [Top %s ]**\n' % (num_parameters, f"<a href='./{RANK_NAME}'>Check rank</a>"))
+contents.append('**Number of parameters: [ %s ] [ %s ]**\n' % (num_parameters, f"<a href='./{RANK_NAME}'>Check rank</a>"))
 contents.append('**Number of trainable parameters: [ %s ]**\n' % (num_trainable_parameters))
 contents.append('**Proportional of each form** (%)\n')
 contents.append(prop_table)

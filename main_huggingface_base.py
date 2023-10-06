@@ -1,16 +1,16 @@
 import os
 import json
-from transformers import BertForSequenceClassification, BertConfig
+from transformers import RobertaForSequenceClassification, BertConfig
 from utils import *
 from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 'bert-base-cased'
+model_name = 'roberta-base'
 
 raise NotImplementedError
 
-model = BertForSequenceClassification.from_pretrained(model_name)
+model = RobertaForSequenceClassification.from_pretrained(model_name)
 model._require_grad = True
 
 with open('./basic_info.json', 'r') as f:
@@ -26,6 +26,8 @@ with open('./basic_info.json', 'r') as f:
     IMAGE_PATH = os.path.join(IMAGE_PATH, modality, task)
     
 check_path(file_tree)
+
+model_name = model_name2clear_name(model_name)
 
 if not os.path.exists(JSON_PATH):
     os.makedirs(JSON_PATH)
@@ -65,10 +67,10 @@ else:
 rank_json = rank_json["top_param_models"]
 
 rank_content = ['# Top parameter models\n\n']
-rank_content.append('| Rank | Model | Number of parameters |\n')
+rank_content.append('| Rank | Model | Number of parameters (unit: bytes) |\n')
 rank_content.append('| --- | --- | --- |\n')
 for idx, model in enumerate(rank_json.keys()):
-    rank_content.append(f'| {idx+1} | {model} | {rank_json[model]} |\n')
+    rank_content.append(f'| {idx+1} | <a href="{model}.md">{model}</a> | {converter.num2str(rank_json[model], "param2bit")} |\n')
     
 with open(RANK_PATH, 'w') as f:
     for content in rank_content:
@@ -78,7 +80,7 @@ current_model_rank = list(rank_json.keys()).index(model_name) + 1
 
 contents = ['# %s parameter information\n' % (model_name)]
 contents.append('**Number of layers: [ %d ]**\n' % (num_layers))
-contents.append('**Number of parameters: [ %s ] [Top %s ]**\n' % (num_parameters, f"<a href='../{RANK_NAME}'>{current_model_rank}</a>"))
+contents.append('**Number of parameters: [ %s ] [ %s ]**\n' % (num_parameters, f"<a href='./{RANK_NAME}'>Check rank</a>"))
 contents.append('**Number of trainable parameters: [ %s ]**\n' % (num_trainable_parameters))
 contents.append('**Proportional of each form** (%)\n')
 contents.append(prop_table)
@@ -91,3 +93,5 @@ with open(os.path.join(DOC_PATH, f'{model_name}.md'), 'w') as f:
     for content in contents:
         f.write(content)
         f.write('\n')
+
+os.system("git add ./docs/* && git commit -m 'update' && git push origin master")

@@ -2,7 +2,7 @@
 
 **Number of layers: [ 201 ]**
 
-**Number of parameters: [ 413.177 MiB ] [Top <a href='../README.md'>3</a> ]**
+**Number of parameters: [ 413.177 MiB ] [Top <a href='./README.md'>3</a> ]**
 
 **Number of trainable parameters: [ 413.177 MiB ]**
 

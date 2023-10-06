@@ -2,6 +2,7 @@
     "top_param_models": {
         "albert-base-v1": 11685122,
         "albert-base-v2": 11685122,
+        "albert-large-v2": 17686018,
         "bert-base-cased": 108311810,
         "bert-base-uncased": 109483778,
         "bert-large-uncased": 335143938,

@@ -1,5 +1,6 @@
 {
     "top_param_models": {
+        "efficientnetv2_rw_t": 13649388,
         "microsoft-resnet-101": 42500160,
         "microsoft-resnet-152": 58143808,
         "microsoft-resnet-18": 11176512,

@@ -8,6 +8,7 @@
         "microsoft-resnet-50": 23508032,
         "mobilenet_v1": 3209026,
         "mobilenet_v2": 2226434,
+        "mobilenetv2_120d": 5831144,
         "mobilenetv2_140": 6108776,
         "mobilenetv3_large_100": 5483032
     }

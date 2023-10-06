@@ -1,14 +1,15 @@
 import os
 import json
-from transformers import RobertaForSequenceClassification, BertConfig
+from transformers import T5ForSequenceClassification, T5Config
 from utils import *
 from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 'roberta-base'
+model_name = 't5-11b'
 
-model = RobertaForSequenceClassification.from_pretrained(model_name)
+config = T5Config.from_pretrained(model_name)
+model = T5ForSequenceClassification._from_config(config)
 model._require_grad = True
 
 with open('./basic_info.json', 'r') as f:

@@ -1,14 +1,17 @@
 import os
 import json
-from transformers import ResNetModel, BertConfig
+from transformers import MobileNetV2ForImageClassification, MobileNetV2Config
+import timm
 from utils import *
 from convert import Converter
 
 modality = 'image'
 task = 'classification'
-model_name = 'microsoft/resnet-50'
+model_name = 'efficientnet_b0'
 
-model = ResNetModel.from_pretrained(model_name)
+config = MobileNetV2Config()
+# model = MobileNetV2ForImageClassification._from_config(config)
+model = timm.create_model(model_name, pretrained=False)
 model._require_grad = True
 
 with open('./basic_info.json', 'r') as f:

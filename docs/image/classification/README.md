@@ -17,3 +17,4 @@
 | 13 | <a href="mobilenet_v2.md">mobilenet_v2</a> | 8.493 MiB |
 | 14 | <a href="mobilenetv3_small_075.md">mobilenetv3_small_075</a> | 7.789 MiB |
 | 15 | <a href="mobilenetv2_050.md">mobilenetv2_050</a> | 7.510 MiB |
+| 16 | <a href="mobilenetv3_small_050.md">mobilenetv3_small_050</a> | 6.078 MiB |

@@ -16,6 +16,7 @@
         "t5-base": 223495682,
         "t5-large": 738719746,
         "t5-small": 60770306,
-        "xlnet-base-cased": 117310466
+        "xlnet-base-cased": 117310466,
+        "xlnet-large-cased": 361320450
     }
 }

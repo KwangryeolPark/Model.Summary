@@ -1,14 +1,14 @@
 import os
 import json
-from transformers import XLNetForSequenceClassification, BertConfig
+from transformers import T5ForSequenceClassification, BertConfig
 from utils import *
 from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 'xlnet-base-cased'
+model_name = 't5-11b'
 
-model = XLNetForSequenceClassification.from_pretrained(model_name)
+model = T5ForSequenceClassification.from_pretrained(model_name)
 model._require_grad = True
 
 with open('./basic_info.json', 'r') as f:

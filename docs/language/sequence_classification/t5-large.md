@@ -1,0 +1,540 @@
+# t5-large parameter information
+
+**Number of layers: [ 513 ]**
+
+**Number of parameters: [ 2.752 GiB ] [Top <a href='./README.md'>1</a> ]**
+
+**Number of trainable parameters: [ 2.752 GiB ]**
+
+**Proportional of each form** (%)
+
+| Vector | Matrix | 
+|  --- | --- |
+| 24.17 | 75.83 | 
+
+**Proportional of parameters by form** (%)
+
+
+| Vector | Matrix | 
+|  --- | --- |
+| 0.02 | 99.98 | 
+
+# Layer information
+
+
+| Name | Shape | Squeezed shape | Number of parameters | Form |
+| --- | --- | --- | --- | --- |
+| transformer.shared.weight | (32128, 1024) | (32128, 1024) | 32899072 | Matrix |
+| transformer.encoder.block.0.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.0.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.0.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.0.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight | (32, 16) | (32, 16) | 512 | Matrix |
+| transformer.encoder.block.0.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.0.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.0.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.0.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.1.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.1.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.1.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.1.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.1.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.1.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.1.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.1.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.2.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.2.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.2.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.2.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.2.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.2.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.2.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.2.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.3.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.3.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.3.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.3.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.3.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.3.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.3.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.3.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.4.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.4.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.4.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.4.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.4.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.4.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.4.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.4.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.5.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.5.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.5.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.5.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.5.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.5.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.5.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.5.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.6.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.6.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.6.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.6.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.6.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.6.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.6.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.6.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.7.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.7.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.7.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.7.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.7.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.7.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.7.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.7.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.8.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.8.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.8.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.8.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.8.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.8.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.8.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.8.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.9.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.9.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.9.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.9.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.9.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.9.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.9.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.9.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.10.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.10.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.10.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.10.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.10.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.10.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.10.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.10.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.11.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.11.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.11.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.11.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.11.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.11.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.11.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.11.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.12.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.12.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.12.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.12.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.12.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.12.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.12.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.12.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.13.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.13.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.13.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.13.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.13.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.13.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.13.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.13.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.14.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.14.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.14.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.14.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.14.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.14.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.14.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.14.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.15.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.15.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.15.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.15.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.15.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.15.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.15.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.15.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.16.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.16.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.16.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.16.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.16.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.16.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.16.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.16.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.17.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.17.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.17.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.17.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.17.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.17.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.17.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.17.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.18.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.18.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.18.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.18.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.18.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.18.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.18.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.18.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.19.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.19.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.19.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.19.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.19.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.19.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.19.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.19.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.20.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.20.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.20.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.20.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.20.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.20.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.20.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.20.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.21.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.21.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.21.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.21.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.21.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.21.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.21.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.21.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.22.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.22.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.22.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.22.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.22.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.22.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.22.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.22.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.23.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.23.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.23.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.23.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.encoder.block.23.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.block.23.layer.1.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.encoder.block.23.layer.1.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.encoder.block.23.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.encoder.final_layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.0.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight | (32, 16) | (32, 16) | 512 | Matrix |
+| transformer.decoder.block.0.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.0.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.0.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.0.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.0.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.0.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.1.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.1.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.1.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.1.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.1.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.1.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.2.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.2.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.2.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.2.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.2.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.2.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.3.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.3.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.3.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.3.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.3.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.3.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.4.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.4.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.4.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.4.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.4.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.4.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.5.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.5.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.5.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.5.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.5.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.5.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.6.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.6.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.6.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.6.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.6.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.6.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.7.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.7.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.7.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.7.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.7.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.7.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.8.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.8.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.8.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.8.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.8.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.8.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.9.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.9.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.9.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.9.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.9.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.9.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.10.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.10.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.10.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.10.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.10.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.10.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.11.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.11.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.11.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.11.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.11.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.11.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.12.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.12.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.12.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.12.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.12.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.12.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.13.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.13.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.13.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.13.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.13.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.13.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.14.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.14.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.14.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.14.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.14.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.14.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.15.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.15.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.15.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.15.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.15.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.15.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.16.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.16.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.16.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.16.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.16.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.16.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.17.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.17.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.17.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.17.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.17.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.17.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.18.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.18.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.18.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.18.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.18.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.18.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.19.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.19.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.19.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.19.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.19.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.19.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.20.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.20.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.20.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.20.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.20.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.20.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.21.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.21.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.21.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.21.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.21.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.21.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.22.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.22.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.22.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.22.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.22.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.22.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.23.layer.0.SelfAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.0.SelfAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.0.SelfAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.0.SelfAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.0.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.23.layer.1.EncDecAttention.q.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.1.EncDecAttention.k.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.1.EncDecAttention.v.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.1.EncDecAttention.o.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| transformer.decoder.block.23.layer.1.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.block.23.layer.2.DenseReluDense.wi.weight | (4096, 1024) | (4096, 1024) | 4194304 | Matrix |
+| transformer.decoder.block.23.layer.2.DenseReluDense.wo.weight | (1024, 4096) | (1024, 4096) | 4194304 | Matrix |
+| transformer.decoder.block.23.layer.2.layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| transformer.decoder.final_layer_norm.weight | (1024,) | (1024,) | 1024 | Vector |
+| classification_head.dense.weight | (1024, 1024) | (1024, 1024) | 1048576 | Matrix |
+| classification_head.dense.bias | (1024,) | (1024,) | 1024 | Vector |
+| classification_head.out_proj.weight | (2, 1024) | (2, 1024) | 2048 | Matrix |
+| classification_head.out_proj.bias | (2,) | (2,) | 2 | Vector |
+

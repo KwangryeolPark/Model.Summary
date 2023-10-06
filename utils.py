@@ -1,5 +1,6 @@
 import os
 from convert import Converter
+from tqdm.auto import tqdm
 
 converter = Converter()
 
@@ -22,20 +23,23 @@ def convert_num_to_str(num):
 
 def get_num_layers(model):
     num_layers = 0
-    for _, _ in model.named_parameters():
+    tqdm_loader = tqdm(model.named_parameters(), desc='Counting layers')
+    for _, _ in tqdm_loader:
         num_layers += 1
     return num_layers
 
 def get_num_parameters(model, type:str='str'):
     num_param = 0
-    for _, param in model.named_parameters():
+    tqdm_loader = tqdm(model.named_parameters(), desc='Counting parameters')
+    for _, param in tqdm_loader:
         num_param += param.numel()
     
     return converter.num2str(num_param, type)
 
 def get_num_trainable_parameters(model, type:str='str'):
     num_param = 0
-    for _, param in model.named_parameters():
+    tqdm_loader = tqdm(model.named_parameters(), desc='Counting trainable parameters')
+    for _, param in tqdm_loader:
         if param.requires_grad:
             num_param += param.numel()
     
@@ -47,7 +51,8 @@ def get_num_layers_by_form(model):
         '1.Matrix': 0,
     }
 
-    for _, param in model.named_parameters():
+    tqdm_loader = tqdm(model.named_parameters(), desc='Counting layers by form')
+    for _, param in tqdm_loader:
         real_shape = param.squeeze().shape
         rank = len(real_shape)
         if rank == 1:
@@ -71,7 +76,8 @@ def get_num_parameters_by_form(model):
         '1.Matrix': 0,
     }
 
-    for _, param in model.named_parameters():
+    tqdm_loader = tqdm(model.named_parameters(), desc='Counting parameters by form')
+    for _, param in tqdm_loader:
         real_shape = param.squeeze().shape
         rank = len(real_shape)
         if rank == 1:
@@ -133,7 +139,9 @@ def generate_prop_param_table(model):
 def generate_layer_table(model):
     contents = '| Name | Shape | Squeezed shape | Number of parameters | Form |\n'
     contents += '| --- | --- | --- | --- | --- |\n'
-    for name, param in model.named_parameters():
+    
+    tqdm_loader = tqdm(model.named_parameters(), desc='Generating layer table')
+    for name, param in tqdm_loader:
         real_shape = tuple(param.squeeze().shape)
         rank = len(real_shape)
         if rank == 1:

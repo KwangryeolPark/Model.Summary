@@ -6,7 +6,7 @@ from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 'roberta-base'
+model_name = 'roberta-large-mnli'
 
 model = RobertaForSequenceClassification.from_pretrained(model_name)
 model._require_grad = True
@@ -90,4 +90,4 @@ with open(os.path.join(DOC_PATH, f'{model_name}.md'), 'w') as f:
         f.write(content)
         f.write('\n')
 
-os.system("git add . && git commit -m 'update' && git push origin master")
+os.system("git add ./docs/* && git commit -m 'update' && git push origin master")

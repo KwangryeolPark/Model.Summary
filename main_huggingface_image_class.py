@@ -1,14 +1,14 @@
 import os
 import json
-from transformers import RobertaForSequenceClassification, BertConfig
+from transformers import ResNetModel, BertConfig
 from utils import *
 from convert import Converter
 
-modality = 'language'
-task = 'sequence_classification'
-model_name = 'roberta-base'
+modality = 'image'
+task = 'classification'
+model_name = 'microsoft/resnet-50'
 
-model = RobertaForSequenceClassification.from_pretrained(model_name)
+model = ResNetModel.from_pretrained(model_name)
 model._require_grad = True
 
 with open('./basic_info.json', 'r') as f:
@@ -40,6 +40,7 @@ num_trainable_parameters = get_num_trainable_parameters(model, 'param2bit')
 prop_table = generate_prop_form_table(model)
 prop_param_table = generate_prop_param_table(model)
 layer_table = generate_layer_table(model)
+
 
 if not os.path.exists(os.path.join(JSON_PATH, JSON_NAME)):
     rank_json = {

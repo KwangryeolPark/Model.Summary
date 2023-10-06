@@ -136,6 +136,9 @@ def generate_prop_param_table(model):
     
     return table
 
+def model_name2clear_name(model_name):
+    return model_name.replace('/', '-')
+
 def generate_layer_table(model):
     contents = '| Name | Shape | Squeezed shape | Number of parameters | Form |\n'
     contents += '| --- | --- | --- | --- | --- |\n'

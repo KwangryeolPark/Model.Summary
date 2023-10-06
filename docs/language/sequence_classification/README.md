@@ -15,3 +15,4 @@
 | 11 | <a href="bert-base-uncased.md">bert-base-uncased</a> | 417.647 MiB |
 | 12 | <a href="bert-base-cased.md">bert-base-cased</a> | 413.177 MiB |
 | 13 | <a href="t5-small.md">t5-small</a> | 231.820 MiB |
+| 14 | <a href="albert-base-v1.md">albert-base-v1</a> | 44.575 MiB |

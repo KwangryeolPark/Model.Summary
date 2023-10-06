@@ -6,7 +6,7 @@ from convert import Converter
 
 modality = 'language'
 task = 'sequence_classification'
-model_name = 'albert_base_v1'
+model_name = 'albert-base-v1'
 
 model = AlbertForSequenceClassification.from_pretrained(model_name)
 model._require_grad = True

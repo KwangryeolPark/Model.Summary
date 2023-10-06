@@ -63,10 +63,10 @@ else:
 rank_json = rank_json["top_param_models"]
 
 rank_content = ['# Top parameter models\n\n']
-rank_content.append('| Rank | Model | Number of parameters |\n')
+rank_content.append('| Rank | Model | Number of parameters (unit: bytes) |\n')
 rank_content.append('| --- | --- | --- |\n')
 for idx, model in enumerate(rank_json.keys()):
-    rank_content.append(f'| {idx+1} | {model} | {converter.num2str(rank_json[model], "param2bit")} |\n')
+    rank_content.append(f'| {idx+1} | <a href="{model}.md">{model}</a> | {converter.num2str(rank_json[model], "param2bit")} |\n')
     
 with open(RANK_PATH, 'w') as f:
     for content in rank_content:

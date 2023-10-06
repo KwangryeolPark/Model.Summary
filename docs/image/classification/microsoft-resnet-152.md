@@ -1,0 +1,492 @@
+# microsoft-resnet-152 parameter information
+
+**Number of layers: [ 465 ]**
+
+**Number of parameters: [ 221.801 MiB ] [ <a href='./README.md'>Check rank</a> ]**
+
+**Number of trainable parameters: [ 221.801 MiB ]**
+
+**Proportional of each form** (%)
+
+| Vector | Matrix | Tensor rank 4 | 
+|  --- | --- | --- |
+| 66.67 | 22.37 | 10.97 | 
+
+**Proportional of parameters by form** (%)
+
+
+| Vector | Matrix | Tensor rank 4 | 
+|  --- | --- | --- |
+| 0.26 | 48.81 | 50.93 | 
+
+# Layer information
+
+
+| Name | Shape | Squeezed shape | Number of parameters | Form |
+| --- | --- | --- | --- | --- |
+| embedder.embedder.convolution.weight | (64, 3, 7, 7) | (64, 3, 7, 7) | 9408 | Tensor rank 4 |
+| embedder.embedder.normalization.weight | (64,) | (64,) | 64 | Vector |
+| embedder.embedder.normalization.bias | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.0.shortcut.convolution.weight | (256, 64, 1, 1) | (256, 64) | 16384 | Matrix |
+| encoder.stages.0.layers.0.shortcut.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.0.layers.0.shortcut.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.0.layers.0.layer.0.convolution.weight | (64, 64, 1, 1) | (64, 64) | 4096 | Matrix |
+| encoder.stages.0.layers.0.layer.0.normalization.weight | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.0.layer.0.normalization.bias | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.0.layer.1.convolution.weight | (64, 64, 3, 3) | (64, 64, 3, 3) | 36864 | Tensor rank 4 |
+| encoder.stages.0.layers.0.layer.1.normalization.weight | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.0.layer.1.normalization.bias | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.0.layer.2.convolution.weight | (256, 64, 1, 1) | (256, 64) | 16384 | Matrix |
+| encoder.stages.0.layers.0.layer.2.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.0.layers.0.layer.2.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.0.layers.1.layer.0.convolution.weight | (64, 256, 1, 1) | (64, 256) | 16384 | Matrix |
+| encoder.stages.0.layers.1.layer.0.normalization.weight | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.1.layer.0.normalization.bias | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.1.layer.1.convolution.weight | (64, 64, 3, 3) | (64, 64, 3, 3) | 36864 | Tensor rank 4 |
+| encoder.stages.0.layers.1.layer.1.normalization.weight | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.1.layer.1.normalization.bias | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.1.layer.2.convolution.weight | (256, 64, 1, 1) | (256, 64) | 16384 | Matrix |
+| encoder.stages.0.layers.1.layer.2.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.0.layers.1.layer.2.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.0.layers.2.layer.0.convolution.weight | (64, 256, 1, 1) | (64, 256) | 16384 | Matrix |
+| encoder.stages.0.layers.2.layer.0.normalization.weight | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.2.layer.0.normalization.bias | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.2.layer.1.convolution.weight | (64, 64, 3, 3) | (64, 64, 3, 3) | 36864 | Tensor rank 4 |
+| encoder.stages.0.layers.2.layer.1.normalization.weight | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.2.layer.1.normalization.bias | (64,) | (64,) | 64 | Vector |
+| encoder.stages.0.layers.2.layer.2.convolution.weight | (256, 64, 1, 1) | (256, 64) | 16384 | Matrix |
+| encoder.stages.0.layers.2.layer.2.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.0.layers.2.layer.2.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.1.layers.0.shortcut.convolution.weight | (512, 256, 1, 1) | (512, 256) | 131072 | Matrix |
+| encoder.stages.1.layers.0.shortcut.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.0.shortcut.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.0.layer.0.convolution.weight | (128, 256, 1, 1) | (128, 256) | 32768 | Matrix |
+| encoder.stages.1.layers.0.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.0.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.0.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.0.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.0.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.0.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.0.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.0.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.1.layer.0.convolution.weight | (128, 512, 1, 1) | (128, 512) | 65536 | Matrix |
+| encoder.stages.1.layers.1.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.1.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.1.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.1.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.1.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.1.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.1.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.1.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.2.layer.0.convolution.weight | (128, 512, 1, 1) | (128, 512) | 65536 | Matrix |
+| encoder.stages.1.layers.2.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.2.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.2.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.2.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.2.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.2.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.2.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.2.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.3.layer.0.convolution.weight | (128, 512, 1, 1) | (128, 512) | 65536 | Matrix |
+| encoder.stages.1.layers.3.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.3.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.3.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.3.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.3.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.3.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.3.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.3.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.4.layer.0.convolution.weight | (128, 512, 1, 1) | (128, 512) | 65536 | Matrix |
+| encoder.stages.1.layers.4.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.4.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.4.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.4.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.4.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.4.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.4.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.4.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.5.layer.0.convolution.weight | (128, 512, 1, 1) | (128, 512) | 65536 | Matrix |
+| encoder.stages.1.layers.5.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.5.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.5.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.5.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.5.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.5.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.5.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.5.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.6.layer.0.convolution.weight | (128, 512, 1, 1) | (128, 512) | 65536 | Matrix |
+| encoder.stages.1.layers.6.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.6.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.6.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.6.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.6.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.6.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.6.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.6.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.7.layer.0.convolution.weight | (128, 512, 1, 1) | (128, 512) | 65536 | Matrix |
+| encoder.stages.1.layers.7.layer.0.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.7.layer.0.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.7.layer.1.convolution.weight | (128, 128, 3, 3) | (128, 128, 3, 3) | 147456 | Tensor rank 4 |
+| encoder.stages.1.layers.7.layer.1.normalization.weight | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.7.layer.1.normalization.bias | (128,) | (128,) | 128 | Vector |
+| encoder.stages.1.layers.7.layer.2.convolution.weight | (512, 128, 1, 1) | (512, 128) | 65536 | Matrix |
+| encoder.stages.1.layers.7.layer.2.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.1.layers.7.layer.2.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.2.layers.0.shortcut.convolution.weight | (1024, 512, 1, 1) | (1024, 512) | 524288 | Matrix |
+| encoder.stages.2.layers.0.shortcut.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.0.shortcut.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.0.layer.0.convolution.weight | (256, 512, 1, 1) | (256, 512) | 131072 | Matrix |
+| encoder.stages.2.layers.0.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.0.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.0.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.0.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.0.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.0.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.0.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.0.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.1.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.1.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.1.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.1.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.1.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.1.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.1.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.1.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.1.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.2.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.2.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.2.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.2.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.2.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.2.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.2.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.2.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.2.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.3.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.3.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.3.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.3.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.3.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.3.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.3.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.3.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.3.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.4.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.4.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.4.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.4.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.4.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.4.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.4.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.4.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.4.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.5.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.5.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.5.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.5.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.5.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.5.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.5.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.5.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.5.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.6.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.6.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.6.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.6.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.6.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.6.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.6.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.6.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.6.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.7.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.7.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.7.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.7.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.7.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.7.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.7.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.7.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.7.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.8.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.8.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.8.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.8.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.8.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.8.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.8.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.8.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.8.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.9.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.9.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.9.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.9.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.9.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.9.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.9.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.9.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.9.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.10.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.10.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.10.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.10.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.10.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.10.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.10.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.10.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.10.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.11.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.11.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.11.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.11.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.11.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.11.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.11.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.11.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.11.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.12.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.12.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.12.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.12.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.12.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.12.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.12.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.12.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.12.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.13.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.13.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.13.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.13.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.13.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.13.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.13.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.13.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.13.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.14.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.14.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.14.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.14.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.14.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.14.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.14.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.14.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.14.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.15.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.15.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.15.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.15.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.15.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.15.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.15.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.15.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.15.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.16.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.16.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.16.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.16.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.16.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.16.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.16.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.16.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.16.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.17.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.17.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.17.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.17.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.17.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.17.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.17.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.17.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.17.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.18.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.18.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.18.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.18.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.18.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.18.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.18.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.18.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.18.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.19.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.19.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.19.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.19.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.19.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.19.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.19.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.19.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.19.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.20.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.20.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.20.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.20.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.20.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.20.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.20.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.20.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.20.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.21.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.21.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.21.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.21.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.21.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.21.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.21.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.21.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.21.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.22.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.22.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.22.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.22.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.22.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.22.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.22.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.22.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.22.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.23.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.23.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.23.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.23.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.23.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.23.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.23.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.23.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.23.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.24.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.24.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.24.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.24.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.24.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.24.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.24.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.24.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.24.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.25.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.25.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.25.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.25.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.25.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.25.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.25.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.25.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.25.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.26.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.26.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.26.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.26.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.26.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.26.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.26.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.26.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.26.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.27.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.27.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.27.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.27.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.27.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.27.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.27.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.27.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.27.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.28.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.28.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.28.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.28.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.28.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.28.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.28.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.28.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.28.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.29.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.29.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.29.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.29.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.29.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.29.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.29.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.29.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.29.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.30.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.30.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.30.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.30.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.30.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.30.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.30.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.30.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.30.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.31.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.31.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.31.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.31.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.31.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.31.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.31.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.31.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.31.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.32.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.32.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.32.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.32.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.32.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.32.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.32.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.32.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.32.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.33.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.33.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.33.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.33.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.33.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.33.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.33.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.33.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.33.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.34.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.34.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.34.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.34.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.34.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.34.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.34.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.34.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.34.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.35.layer.0.convolution.weight | (256, 1024, 1, 1) | (256, 1024) | 262144 | Matrix |
+| encoder.stages.2.layers.35.layer.0.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.35.layer.0.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.35.layer.1.convolution.weight | (256, 256, 3, 3) | (256, 256, 3, 3) | 589824 | Tensor rank 4 |
+| encoder.stages.2.layers.35.layer.1.normalization.weight | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.35.layer.1.normalization.bias | (256,) | (256,) | 256 | Vector |
+| encoder.stages.2.layers.35.layer.2.convolution.weight | (1024, 256, 1, 1) | (1024, 256) | 262144 | Matrix |
+| encoder.stages.2.layers.35.layer.2.normalization.weight | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.2.layers.35.layer.2.normalization.bias | (1024,) | (1024,) | 1024 | Vector |
+| encoder.stages.3.layers.0.shortcut.convolution.weight | (2048, 1024, 1, 1) | (2048, 1024) | 2097152 | Matrix |
+| encoder.stages.3.layers.0.shortcut.normalization.weight | (2048,) | (2048,) | 2048 | Vector |
+| encoder.stages.3.layers.0.shortcut.normalization.bias | (2048,) | (2048,) | 2048 | Vector |
+| encoder.stages.3.layers.0.layer.0.convolution.weight | (512, 1024, 1, 1) | (512, 1024) | 524288 | Matrix |
+| encoder.stages.3.layers.0.layer.0.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.0.layer.0.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.0.layer.1.convolution.weight | (512, 512, 3, 3) | (512, 512, 3, 3) | 2359296 | Tensor rank 4 |
+| encoder.stages.3.layers.0.layer.1.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.0.layer.1.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.0.layer.2.convolution.weight | (2048, 512, 1, 1) | (2048, 512) | 1048576 | Matrix |
+| encoder.stages.3.layers.0.layer.2.normalization.weight | (2048,) | (2048,) | 2048 | Vector |
+| encoder.stages.3.layers.0.layer.2.normalization.bias | (2048,) | (2048,) | 2048 | Vector |
+| encoder.stages.3.layers.1.layer.0.convolution.weight | (512, 2048, 1, 1) | (512, 2048) | 1048576 | Matrix |
+| encoder.stages.3.layers.1.layer.0.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.1.layer.0.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.1.layer.1.convolution.weight | (512, 512, 3, 3) | (512, 512, 3, 3) | 2359296 | Tensor rank 4 |
+| encoder.stages.3.layers.1.layer.1.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.1.layer.1.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.1.layer.2.convolution.weight | (2048, 512, 1, 1) | (2048, 512) | 1048576 | Matrix |
+| encoder.stages.3.layers.1.layer.2.normalization.weight | (2048,) | (2048,) | 2048 | Vector |
+| encoder.stages.3.layers.1.layer.2.normalization.bias | (2048,) | (2048,) | 2048 | Vector |
+| encoder.stages.3.layers.2.layer.0.convolution.weight | (512, 2048, 1, 1) | (512, 2048) | 1048576 | Matrix |
+| encoder.stages.3.layers.2.layer.0.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.2.layer.0.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.2.layer.1.convolution.weight | (512, 512, 3, 3) | (512, 512, 3, 3) | 2359296 | Tensor rank 4 |
+| encoder.stages.3.layers.2.layer.1.normalization.weight | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.2.layer.1.normalization.bias | (512,) | (512,) | 512 | Vector |
+| encoder.stages.3.layers.2.layer.2.convolution.weight | (2048, 512, 1, 1) | (2048, 512) | 1048576 | Matrix |
+| encoder.stages.3.layers.2.layer.2.normalization.weight | (2048,) | (2048,) | 2048 | Vector |
+| encoder.stages.3.layers.2.layer.2.normalization.bias | (2048,) | (2048,) | 2048 | Vector |
+

@@ -6,6 +6,7 @@
         "efficientnet_b3": 12233232,
         "efficientnet_b4": 19341616,
         "efficientnet_b5": 30389784,
+        "efficientnet_v2_s": 21458488,
         "efficientnetv2_rw_t": 13649388,
         "microsoft-resnet-101": 42500160,
         "microsoft-resnet-152": 58143808,
